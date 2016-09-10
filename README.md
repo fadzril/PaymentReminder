@@ -42,6 +42,6 @@ Will add further instruction...
 
 Run
  ```
-    $ cd server/
+    $ cd middleware/
  	$ go run *.go
  ```
