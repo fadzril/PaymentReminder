@@ -1,6 +1,8 @@
 Payment Reminder
 ================
 
+####Simple RN App with Gin Middleware#####
+
 Some learning curve for React-Native application with Gin (Golang HTTP Middleware). I'm opted to use mobx as state management platform. Please refer to respective tools for build and run on your local.
 
 There's a lot of works and set of instruction to be update. In a mean while, I've just posted a starter and initial points. And please be gentle, this code really need to re-factor especially for middleware and db queries.
