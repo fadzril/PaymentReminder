@@ -108,8 +108,12 @@ class NewTask extends Component {
         this.setState({showDatePicker: true});
     }
 
-    _save() {
-        this.props.store._save({...this.state}, _this.close);
+    _saveItem() {
+        for (i in this.state) {
+            if (this.state[i] == "")
+                return alert('Incomplete Request. Fill up all required fields');
+        }
+        this.props.store._save({...this.state}, this.props.navigator.pop);
     }
 
     _close() {
@@ -160,7 +164,7 @@ class NewTask extends Component {
                 </View>
                 <View style={styles.row}>
                     <AddSession style={styles.col} onPress={this._saveSessionDate.bind(this)} />
-                    <SaveButton style={styles.col} onPress={this._save.bind(this)} />
+                    <SaveButton style={styles.col} onPress={this._saveItem.bind(this)} />
                 </View>
             </View>
         )

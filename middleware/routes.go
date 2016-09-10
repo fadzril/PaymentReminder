@@ -125,7 +125,7 @@ func PostTask(c *gin.Context) {
 			log.Printf("Error Find(): %q\n", err)
 		}
 
-		c.JSON(200, gin.H{"result": "Successfully add new task", "data": task})
+		c.JSON(200, gin.H{"result": true, "msg": "Successfully add new task."})
 	}
 }
 

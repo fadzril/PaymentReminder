@@ -110,6 +110,12 @@ export class TaskStore {
         axios.post('http://localhost:5000/tasks', data, config)
             .then( result => {
                 if (! result.error) {
+                    // Some issue using this option
+                    // this.tasks.push(data);
+
+                    // For this time, just use dirty old way
+                    this._fetch();
+                    
                     alert(result.data.msg);
                     if (cb) return cb()
                 }
