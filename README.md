@@ -21,6 +21,7 @@ Will add further instruction...
 
 Run
  ```
+    $ cd client/
  	$ react-native run-ios
  ```
 
@@ -39,5 +40,6 @@ Will add further instruction...
 
 Run
  ```
+    $ cd server/
  	$ go run *.go
  ```
